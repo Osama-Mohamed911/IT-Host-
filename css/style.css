@@ -1,0 +1,413 @@
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.padding-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+h2,h3,h4,h5{
+    color: #1c1c1c;
+    font-weight: 600;
+}
+p{
+    font-size: 14px;
+    color: #585858;
+    line-height: 2;
+}
+.heading-box{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.heading-box p{
+    color: #8b8b8b;
+    letter-spacing: 1px;
+}
+.heading-box h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+/* start pre-loading */
+.loading{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner-border{
+    border-color: #eb2b63 transparent #eb2b63 #eb2b63;
+}
+/* end pre-loading */
+/* start nav */
+header{
+    background-image: url(/image/bg.jpg.webp);
+    background-size: cover;
+    height: 115vh;
+    padding: 1px;
+}
+.navbar-brand img{
+    vertical-align:0;
+}
+.main-btn{
+    background: #eb2b63;
+    padding: 13px 19px;
+    line-height: 1;
+    border-radius: 14px;
+}
+.main-btn:hover{
+    color: white !important;
+}
+nav .nav-item .nav-link:hover{
+    color: #eb2b63 !important;
+}
+/* end nav */
+/* start landing */
+.landing .container {
+    padding-top: 100px;
+}
+.landing .container .rocket img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    animation: rocket 2s linear infinite;
+}
+.landing .container h1{
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.landing .container p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: white;
+}
+.landing .container .mybtn{
+    background: #eb2b63;
+    padding: 13px 40px;
+    line-height: 1;
+    border-radius: 14px;
+}
+@keyframes rocket {
+    0%{
+        right: 0;
+        top: 40%;
+    }
+    25%{
+        right: 20px;
+        top: 45%;
+    }
+    75%{
+        right: 40px;
+        top:50%;
+    }
+    0%{
+        right: 0px;
+        top: 40%;
+    }
+}
+@media(max-width:991px){
+    .landing .container .rocket img{
+        display: none;
+    }
+    .landing .container h1{
+        font-size: 40px;
+    }
+}
+/* end landing */
+/* start features */
+.features .container .box .icon {
+    background-color: #eb2b63;
+    width: 87px;
+    height:87px;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.features .container .box .icon i {
+    color: white;
+    font-size: 40px;
+}
+.big-size{
+    transform: scale(1.6);
+    transform-origin: bottom center;
+}
+.features .container .box h2{
+    margin-bottom: 50px;
+}
+.features .container .box p{
+    margin-bottom: 50px;
+}
+@media (max-width:991px){
+    .big-size{
+        transform: none;
+    }
+    .heading-box h2{
+        font-size: 34px;
+    }
+}
+/* end features */
+/* start search */
+.search{
+    background-image: url(/image/domain-bg.jpg.webp);
+    background-size: cover;
+}
+.search  input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.search .container .main-btn{
+    line-height: 0;
+    height: 59px;
+    min-width: 229px;
+    text-align: center;
+    padding: 20px 80px;
+}
+.search .container .row{
+    align-items: baseline;
+}
+.search  p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+}
+/* end search */
+/* start progress  */
+.progress-section .container .progress{
+    background-color: #eef6f9;
+    height: 8px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: visible !important;
+    margin-bottom: 30px !important;
+}
+.progress-section .container .parent span{
+    padding-left: 2px;
+    margin-bottom: 20px;
+}
+.progress-section .container .progress .progress-bar{
+    border-radius: 15px;
+    position: relative;
+    overflow: visible !important;
+}
+.progress-section .container .progress .progress-bar .num{
+    color: #1c1c1c;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top:-30px ;
+    
+}
+.carousel-inner .carousel-item .caption{
+    background-color:#eef6f9 ;
+    padding: 30px 40px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.carousel-inner .carousel-item .caption::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 100%;
+    right: 34px;
+    border-width: 18px 10px 10px 10px;
+    border-style: solid;
+    border-color: #eef6f9 transparent transparent transparent;
+}
+.carousel-inner .carousel-item .caption p{
+    font-size: 16px;
+}
+.carousel-inner .carousel-item .person {
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+.carousel-inner .carousel-item .person span{
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.carousel-inner .carousel-item .person .one{
+    color: #1c1c1c;
+}
+.carousel-inner .carousel-item .person .two{
+    color: #eb2b63;
+}
+.carousel-inner .carousel-item .person img {
+    width: 80px;
+    border-radius: 50%;
+}
+.carousel-indicators {
+    display: block;
+    float: left;
+    left: -55px;
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #eb2b63!important;
+}
+.clr{
+    clear: both;
+}
+/* end progress  */
+/* start price */
+.price-caption{
+    padding: 16px;
+    background-color: #7246b3;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.price-caption h4{
+    color: #fff;
+    font-weight: bold;
+}
+.price-plan{
+    padding: 48px 45px 54px;
+    background-color: #eef6f9;
+    border-radius: 15px;
+}
+.the-price p span{
+    font-size: 60px;
+}
+.price-plan ul{
+    margin-bottom: 50px !important;
+}
+.price-plan ul li{
+    margin-bottom: 30px;
+    color: #585858;
+}
+.price-plan .main-btn{
+    padding: 20px 65px;
+}
+@media(max-width:991px){
+    .price-box{
+        margin-bottom: 80px;
+    }
+}
+/* end price */
+/* start offer */
+.offer{
+    background-image: url(/image/banner-bg.jpg.webp);
+    background-size: cover;
+    background-position: center ;
+}
+.offer .main-btn{
+    padding:  15px 50px;
+}
+@media(max-width:767px){
+    .offer .container p{
+        margin-bottom: 30px;
+    }
+}
+/* end offer */
+/* start footer-1 */
+.footer-1 .footer-header{
+    margin-bottom: 50px;
+}
+.footer-1 .footer-header span{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+.footer-1 .footer-box .menu li {
+    margin-right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #491f70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-1 .footer-box .menu li:hover{
+    background-color: #eb2b63;
+}
+.footer-1 .footer-box .menu li i{
+    color: #fff;
+    font-size: 12px;
+}
+.footer-1 .footer-box .links li{
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.footer-1 .footer-box .latest img{
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+}
+.footer-1 .footer-box .latest{
+    display: flex;
+    margin-bottom: 15px;
+}
+.footer-1 .footer-box .latest p{
+    margin-bottom: 0;
+}
+.footer-1 .footer-box .latest .image{
+    margin-right: 15px;
+}
+.footer-1 .footer-box .latest span{
+    color: #eb2b63;
+    font-size:13px;
+}
+/* end footer-1 */
+/* start footer-2 */
+footer{
+    background: #1b043b;
+    padding: 20px 0px
+}
+footer p{
+    float: left;
+    
+}
+footer ul{
+    float: right;
+}
+footer ul li{
+    margin-right: 15px;
+    color: #777;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+footer ul li:hover{
+    color: #790123;
+    font-size: 14px;
+}
+@media(max-width:767px){
+    footer p{
+        margin-bottom: 15px;
+    }
+}
+/* end footer-2 */
