@@ -52,7 +52,7 @@ p{
 /* end pre-loading */
 /* start nav */
 header{
-    background-image: url(/image/bg.jpg.webp);
+    background-image: url(./image/bg.jpg.webp);
     background-size: cover;
     height: 115vh;
     padding: 1px;
@@ -167,7 +167,7 @@ nav .nav-item .nav-link:hover{
 /* end features */
 /* start search */
 .search{
-    background-image: url(/image/domain-bg.jpg.webp);
+    background-image: url(./image/domain-bg.jpg.webp);
     background-size: cover;
 }
 .search  input{
@@ -315,7 +315,7 @@ nav .nav-item .nav-link:hover{
 /* end price */
 /* start offer */
 .offer{
-    background-image: url(/image/banner-bg.jpg.webp);
+    background-image: url(./image/banner-bg.jpg.webp);
     background-size: cover;
     background-position: center ;
 }
